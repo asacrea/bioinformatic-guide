@@ -1,0 +1,3 @@
+ARG BIO_VERSION
+FROM amazon/bio-repo:$BIO_VERSION
+WORKDIR /app/
