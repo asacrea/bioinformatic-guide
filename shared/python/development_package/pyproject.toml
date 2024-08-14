@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "development-package"
+version = "0.1.0"
+description = "Development package for building and testing"
+authors = ["Loka Team"]
+readme = "README.md"
+packages = [{include = "development_package"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+mypy = "^1.10.0"
+pylint = "^3.2.5"
+pre-commit = "^3.5.0"
+ruff = "^0.1.0"
+types-PyYAML = "^5.4.0"
+biopython = "^1.84"
+pysam = "^0.22.1"
+pandas = "^2.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.ruff]
+line-length = 120
+extend-exclude = [ "**/tests/**" ]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # pydocstyle
+    "D",
+    # pep8naming
+    "N",
+    #flake8-unused-arguments
+    "ARG"
+]
+# On top of the Google convention, disable `D417`, which requires
+# documentation for every function parameter.
+ignore = [
+    "D417",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
