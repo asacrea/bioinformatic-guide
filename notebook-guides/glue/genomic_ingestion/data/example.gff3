@@ -1,0 +1,9 @@
+##gff-version 3
+seq1	.	gene	1000	2000	.	+	.	ID=gene1;Name=Gene1
+seq1	.	mRNA	1050	1800	.	+	.	ID=mRNA1;Parent=gene1;Name=Transcript1
+seq1	.	exon	1050	1200	.	+	.	ID=exon1;Parent=mRNA1;Name=Exon1
+seq1	.	exon	1250	1500	.	+	.	ID=exon2;Parent=mRNA1;Name=Exon2
+seq1	.	exon	1550	1800	.	+	.	ID=exon3;Parent=mRNA1;Name=Exon3
+seq1	.	CDS	1060	1190	.	+	0	ID=cds1;Parent=mRNA1
+seq1	.	CDS	1260	1490	.	+	0	ID=cds2;Parent=mRNA1
+seq1	.	CDS	1560	1790	.	+	0	ID=cds3;Parent=mRNA1

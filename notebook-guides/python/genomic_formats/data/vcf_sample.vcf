@@ -1,0 +1,16 @@
+##fileformat=VCFv4.2
+##source=ExampleCaller
+##reference=GRCh37
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
+##FILTER=<ID=q10,Description="Quality below 10">
+##FILTER=<ID=s50,Description="Less than 50% of samples have data">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  SAMPLE1 SAMPLE2
+1       69511   .       T       G       29      PASS    DP=14;AF=0.5    GT:GQ:DP 0/1:48:14  0/0:50:20
+1       69762   .       A       C       3       q10     DP=11;AF=0.3    GT:GQ:DP 0/1:20:11  0/1:40:14
+1       69869   rs1234567 G       A,T     67      PASS    DP=8;AF=0.75   GT:GQ:DP 1/2:99:8   0/1:90:10
+2       321681  .       G       A       47      PASS    DP=12;AF=0.4    GT:GQ:DP 0/1:35:12  0/0:60:15
+2       321689  rs2345678 T       C       50      PASS    DP=20;AF=0.1    GT:GQ:DP 0/0:99:20  0/1:70:25
