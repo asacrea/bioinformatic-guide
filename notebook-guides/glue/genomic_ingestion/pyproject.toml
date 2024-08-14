@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "bronze_vcf_etl"
+version = "0.1.0"
+description = ""
+authors = ["Loka Team"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+awsglue_deps = { path = "../../../shared/awsglue_deps", develop = true }
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]

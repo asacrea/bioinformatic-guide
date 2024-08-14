@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bio_python_notebook"
+version = "0.1.0"
+description = ""
+authors = ["Loka Team"]
+readme = "README.md"
+packages = [{include = "*", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+biopython = "^1.84"
+pandas = "^2.2.2"
+pysam = "^0.22.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
