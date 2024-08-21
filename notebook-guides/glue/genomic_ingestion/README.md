@@ -1,13 +1,10 @@
-# Bronze Appflow ETL Glue Job
+# Bioinformatic formats Data Ingestion
 
-Single general glue job that transfers the data from landing bucket to bronze tables and accepts required_columns,
-s3_landing_bucket, s3_datalake_bucket, input_prefix, layer, source, table, purge_s3, purge_retention_period,
-input_file_format and required_parameters as parameters.
+Single general glue job that transfers the data from a locally path to bronze tables, also a notebook spark processing is included to see some of the most common use cases.
 
 ## Dependencies
- - aws-glue-libs
- - awsglue_deps
- - glue_utils
+ - bio-pyspark
+
 ## Commands
 
 `make init`
@@ -18,7 +15,3 @@ input_file_format and required_parameters as parameters.
 `make lint`
 
 - This commands lints the code using ryff.
-
-`make build`
-
-- This command builds and packages your glue job
