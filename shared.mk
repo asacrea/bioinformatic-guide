@@ -1,4 +1,4 @@
-PROJECT = glue-assets
+PROJECT = bioinformatic-guide
 
 POETRY_VERSION := 1.8.2
 PYTHON_VERSION = $(shell cat .python-version)
