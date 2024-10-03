@@ -16,4 +16,4 @@ Whether you're new to bioinformatics or enhancing your data engineering skills i
 
 `make lint`
 
-- This commands lints the code using ryff.
+- This commands lints the code using ruff.

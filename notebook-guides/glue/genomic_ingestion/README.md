@@ -18,4 +18,4 @@ Single general glue job that transfers the data from a locally path to bronze ta
 
 `make lint`
 
-- This commands lints the code using ryff.
+- This commands lints the code using ruff.
