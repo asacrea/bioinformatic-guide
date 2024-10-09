@@ -22,4 +22,4 @@ Single general glue job that transfers the data from a locally path to bronze ta
 
 `make test_in_jupyter_locally`
 
-- This commands execute a AWS Glue local environment using docker. Be sure to have docker intalled on your computer and have the docker daemon running.
+- This commands execute a AWS Glue local environment using docker. Be sure to have docker installed on your computer and have the docker daemon running.
